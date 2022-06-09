@@ -1,0 +1,294 @@
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+                        /*ASPECTOS GENERALES*/
+h1 {font-size: 3rem;}
+h2{font-size: 2.5rem;
+    margin-bottom: 1em;}
+h3{font-size: 1.9rem;}
+p{font-size: 1.5rem;}
+ul{list-style: none;}
+li{font-size: 1.5rem;}
+
+.letra-color{
+    font-size: 2.5rem;
+    color: blueviolet;
+}
+button{
+    font-size: 1.5rem;
+    padding: .25em .75em;
+    border-radius: 1em;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border: .1em solid white;
+}
+
+button:hover{
+    background:rgb(72, 4, 136);
+}
+
+.contenedor{
+    max-width: 90%;
+    margin: auto;
+}
+                             /*HEADER*/
+header {
+    background-color: rgba(235,235,235);
+    text-align: center;
+    padding: 2em 3em;
+}
+
+header .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: blueviolet;
+    margin-bottom: .80em;
+    text-decoration: underline ;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .contenedor a {
+    font-size: 1.25rem;
+    padding: .4em 1em;
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    font-weight: 600;
+}
+
+header .contenedor a:hover{
+    color:blueviolet;
+    font-weight: 600;
+    text-decoration: overline;
+}
+
+                            /*SECTION 1*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image:  linear-gradient( 0deg, rgba(0,0,0,.6),rgba(0,0,0,.6)),url(https://github.com/choidavid4/pagina-completa-html-css/blob/master/media/hero.jpg?raw=true);
+    background-size: cover;
+    
+    color: white;
+}
+
+.hero button{
+    margin-top: 2em;
+}
+
+                            /*SECTION 2*/
+
+.somos .contenedor{
+    text-align: center;
+    padding: 10em 1em;    
+}
+.somos p{
+    text-align: justify;
+}
+                            /*SECTION 3*/
+.nuestros{
+    background-color: rgba(40,40,40);
+    color: white;
+    text-align: center;
+    padding: 6em 0 4em 0;
+}
+.nuestros .prog{
+    padding: 1.5em 0;
+}
+.button-prog{
+   margin-top: 1.5em;
+   margin-bottom: .8em;
+} 
+.nuestros p{
+    display: none;
+}
+.programas .prog{
+    background-size:cover;
+    background-position: center center;
+    margin: 5em 0;
+    border-radius: .7em;
+    border: .1em solid blueviolet;
+}
+.prog:first-child {
+    background-image:  linear-gradient( 0deg, rgba(0,0,0,.7),rgba(0,0,0,.6)),url(https://github.com/choidavid4/pagina-completa-html-css/blob/master/media/front-end.jpg?raw=true) 
+}
+.prog:nth-child(2){
+    background-image:  linear-gradient( 0deg, rgba(0,0,0,.7),rgba(0,0,0,.6)),url(https://github.com/choidavid4/pagina-completa-html-css/blob/master/media/full-stack-cropped.jpg?raw=true)
+}
+.prog:nth-child(3){
+    background-image:  linear-gradient( 0deg, rgba(0,0,0,.7),rgba(0,0,0,.6)),url(https://github.com/choidavid4/pagina-completa-html-css/blob/master/media/python.jpg?raw=true)
+}
+                            /*SECTION 4*/
+.caracteristicas {
+    font-weight: bold;
+    padding: 12em 0 6em 0;
+}
+.contenedor li i{
+    margin-right: 1em;
+    color: greenyellow;
+    border: .2em solid greenyellow;
+    border-radius: 100%;
+    
+}
+.icon{
+    font-size: 1em;
+    padding: .2em;
+}
+.contenedor li{
+   margin-bottom: 2em;
+   font-size: 2.5em;
+}
+
+                            /*SECTION 5*/
+
+.aplica-ya{
+    text-align: center;
+    align-items: center center;
+    border-top: 1em solid grey;
+    border-bottom: 1em solid grey;
+    background: rgba(30,30,30);
+    color: white;
+    height: 50em;
+    
+}  
+.aplicar h2{
+    font-size: 4rem;
+    margin-top: 4em;
+}
+.button-aplica {
+    font-size: 3.5rem;
+}
+                            /*footer*/
+                            
+
+footer .final{
+    text-align: center;
+    font-size: 1.4em;
+   padding: 1em 0;
+}
+
+                                    @media (min-width: 720px){
+    
+                /*header*/
+    header .contenedor{
+        display: flex;
+        padding-bottom: 0%;
+        justify-content: space-between;
+
+    }
+    header nav {
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    header .contenedor a {
+        margin-right: 1em;
+    }
+
+             /*SECTION 1 */
+
+    .hero .boton {
+        margin-top: 3em;
+    }
+    .hero {
+        background-attachment: fixed;
+    }
+
+            /*SECTION 2*/
+    .somos .contenedor {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 10em 0 10em 0;
+        
+    }
+    .somos .img{
+        height: 40em;
+        width: 215em;
+        background-image:linear-gradient( 0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url(https://github.com/choidavid4/pagina-completa-html-css/blob/master/media/somos-proya.jpg?raw=true);
+        background-size: cover;
+        padding-right: 3em;
+        border-radius: 1em;
+    }
+    .somos .cont-somos{
+        padding-left: 3em;
+    }
+    .somos p{
+        text-align: justify;
+    }
+                /*SECTION 3*/
+
+    .nuestros .programas{
+        display:flex;
+        justify-content: space-between;
+        height: 43em;
+        margin-top: -4em;
+
+    }
+   
+    .nuestros p{
+        display: block;
+       padding-bottom: 2em;
+        
+    }
+    .nuestros h3{
+        padding-bottom: 3em;
+    }
+    .nuestros .prog{
+        margin: 3em;
+        background: none;
+        background-color: rgba(0, 0, 0, 0.342);
+        border: .3em solid blueviolet;
+        box-shadow: 8px 8px 8px rgba(0,0,0,.6);
+    }
+    
+                /*SECTION 4*/
+    .caracteristicas .contenedor{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        
+    }
+    .img-2{
+        height: 30em;
+        width: 45em;
+        background-image:linear-gradient( 0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url(https://github.com/choidavid4/pagina-completa-html-css/blob/master/media/background-2.jpeg?raw=true);
+        background-size: cover;
+        padding-right: 3em;
+        border-radius: 1em;
+    }
+
+    .contenedor li{
+       text-align: left;
+       padding-left: 12em;
+       font-size: 2em;
+    }
+                    /*SECTION 5*/
+    .aplica-ya{
+        border-top: .5em solid grey;
+        border-bottom: .5em solid grey;
+        height: 38em;
+    }  
+   .aplica-ya h2{
+    font-size: 4rem;
+    margin-top:-2em;
+    
+   }
+   .aplica-ya .button-aplica{
+    font-size: 2.5rem;
+    }
+
+}
